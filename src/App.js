@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <PostsContext.Provider value={{posts, setPosts}}> 
         <Routes>
-          <Route path='/ra-42-router-crud' element={<Layout />}>
-            <Route path='/' element={<Navigate to='/ra-42-router-crud/posts' />} />
+          <Route path='/' element={<Layout />}>
+            <Route path='/' element={<Navigate to='/posts' />} />
             <Route path='/posts' element={<Posts />} />
             <Route path='/posts/new' element={<NewPost />} />
             <Route path='/posts/:id' element={<WrapperPost />} />
